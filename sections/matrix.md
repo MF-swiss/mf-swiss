@@ -1,15 +1,17 @@
 # 🟩 Skills-Matrix
 
 ```txt
-┌───────────────┬─────────────────────────────────┐
-│ Bereich        │ Skills                          │
-├───────────────┼─────────────────────────────────┤
-│ Frontend       │ React • Vite • CSS • UI/UX      │
-│ Tools          │ Git • VS Code • GitHub          │
-│ Aktuell lernt  │ (hier ergänzen, z. B. Node.js)  │
-└───────────────┴─────────────────────────────────┘
+┌────────────┬──────────────────────────────────────┐
+│ Bereich     │ Skills                                │
+├────────────┼──────────────────────────────────────┤
+│ Backend     │ Java · Spring Boot 3 · REST · JUnit   │
+│ Datenbank   │ PostgreSQL                            │
+│ Frontend    │ React · Vite · CSS (Grid/Flex)         │
+│ DevOps      │ Docker · Git                           │
+│ Shell       │ Linux · Windows Terminal               │
+└────────────┴──────────────────────────────────────┘
 ```
 
-> Trag hier nur Skills ein, die du wirklich hast oder aktiv lernst.
-> Ein GitHub-Profil wird von Recruitern und anderen Devs oft genau
-> gelesen — was hier steht, sollte zu deinen Repos und Commits passen.
+> Basis: Full-Stack-Projekt "Mini Event-Planer" (Spring Boot + React,
+> PostgreSQL, Docker). Erweitere die Tabelle, sobald neue Skills
+> dazukommen — so bleibt sie ehrlich und aktuell.

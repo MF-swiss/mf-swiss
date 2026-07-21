@@ -5,10 +5,9 @@ $ systemctl status developer.service
 
 ● mf-swiss.service
    Loaded: active
-   Core Modules: React | Vite | CSS | UI/UX
-   Toolchain: VS Code | GitHub
+   Backend:  Java · Spring Boot 3 · REST APIs · PostgreSQL
+   Frontend: React · Vite · CSS
+   DevOps:   Docker · Git
+   Shell:    Linux / Windows Terminal
    Uptime: ∞
 ```
-
-> Tipp: Passe die Module/Toolchain hier an das an, was du wirklich
-> aktiv nutzt — so bleibt das Profil glaubwürdig und wächst mit dir mit.
