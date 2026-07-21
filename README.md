@@ -28,17 +28,42 @@ Mein Fokus: klare Architektur, hochwertige Interfaces und nachhaltige Software�
   <img src="https://img.shields.io/badge/React-00d8ff?style=for-the-badge&logo=react&logoColor=white" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/Windows_Terminal-4D4D4D?style=for-the-badge&logo=windowsterminal&logoColor=white" />
 </p>
-
-→ vollständiges Set in [`sections/badges.md`](sections/badges.md)
 
 ---
 
 ### 🟩 System Status
-→ [`sections/status.md`](sections/status.md)
+
+```bash
+$ systemctl status developer.service
+
+● mf-swiss.service
+   Loaded: active
+   Backend:  Java · Spring Boot 3 · REST APIs · PostgreSQL
+   Frontend: React · Vite · CSS
+   DevOps:   Docker · Git
+   Shell:    Linux / Windows Terminal
+   Uptime: ∞
+```
+
+---
 
 ### 🟩 Skills-Matrix
-→ [`sections/matrix.md`](sections/matrix.md)
+
+```txt
+┌────────────┬──────────────────────────────────────┐
+│ Bereich     │ Skills                                │
+├────────────┼──────────────────────────────────────┤
+│ Backend     │ Java · Spring Boot 3 · REST · JUnit   │
+│ Datenbank   │ PostgreSQL                            │
+│ Frontend    │ React · Vite · CSS (Grid/Flex)         │
+│ DevOps      │ Docker · Git                           │
+│ Shell       │ Linux · Windows Terminal               │
+└────────────┴──────────────────────────────────────┘
+```
 
 ---
 
@@ -53,6 +78,16 @@ Mein Fokus: klare Architektur, hochwertige Interfaces und nachhaltige Software�
 → [`sections/intro.md`](sections/intro.md) · [`sections/loading.md`](sections/loading.md)
 
 ### 🟩 Kontakt
-→ [`sections/contact.md`](sections/contact.md)
+
+```bash
+$ ping mf-swiss.dev
+
+Reply from: portfolio
+Reply from: github
+Reply from: linkedin
+```
+
+> Ersetze die Zeilen durch echte Links, z. B.
+> `[Portfolio](https://deine-seite.ch) · [LinkedIn](https://linkedin.com/in/...)`
 
 </div>
