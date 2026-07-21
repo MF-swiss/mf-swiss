@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="assets/ascii-header.svg" width="100%" />
+<img src="assets/ascii-header.svg" width="720" />
 
 <br/>
 
-<img src="assets/terminal-loading.gif" width="100%" />
+<img src="assets/terminal-loading.gif" width="720" />
 
 </div>
 
