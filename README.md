@@ -10,7 +10,7 @@
 
 ---
 
-### 🟩 Über dieses Profil
+## Über dieses Profil
 
 Ich baue Full‑Stack‑Anwendungen, die sowohl technisch solide als auch visuell ansprechend sind.
 Backend‑Logik mit Spring Boot, moderne Frontends mit React, ergänzt durch DevOps‑Elemente wie Docker und automatisierte Build‑Prozesse.
@@ -19,7 +19,7 @@ Mein Fokus: klare Architektur, hochwertige Interfaces und nachhaltige Software�
 
 ---
 
-### 🟩 Tech Stack
+## Tech Stack
 
 <p align="center">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
@@ -35,6 +35,6 @@ Mein Fokus: klare Architektur, hochwertige Interfaces und nachhaltige Software�
 
 ---
 
-**Kontakt**
+## Kontakt
 
 [Portfolio](https://deine-seite.ch) · [LinkedIn](https://linkedin.com/in/...) · [GitHub](https://github.com/mf-swiss)
