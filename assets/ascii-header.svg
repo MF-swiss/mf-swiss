@@ -1,8 +1,8 @@
-<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg"
+<svg width="1200" height="340" viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg"
      font-family="'Cascadia Code','Consolas',Menlo,Monaco,monospace">
 
   <defs>
-    <!-- Hintergrundgradient -->
+    <!-- Hintergrund -->
     <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#04070d"/>
       <stop offset="100%" stop-color="#0b111c"/>
@@ -15,20 +15,20 @@
       <stop offset="100%" stop-color="#00ffd0"/>
     </linearGradient>
 
-    <!-- Glow Layer -->
+    <!-- Glow -->
     <radialGradient id="glow" cx="50%" cy="35%" r="70%">
-      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.2"/>
+      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.25">
+        <animate attributeName="stop-opacity"
+                 values="0.25;0.55;0.25"
+                 dur="6s"
+                 repeatCount="indefinite"/>
+      </stop>
       <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
     </radialGradient>
 
-    <!-- Grid -->
-    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
-      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#0d1a28" stroke-width="0.8"/>
-    </pattern>
-
     <!-- Soft Glow Filter -->
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3.2" result="blur"/>
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -36,179 +36,46 @@
     </filter>
   </defs>
 
-  <style>
-    /* Glow Pulsing Overlay */
-    .hero-overlay {
-      animation: glowPulse 6s ease-in-out infinite;
-    }
-    @keyframes glowPulse {
-      0% { opacity: 0.25; }
-      50% { opacity: 0.6; }
-      100% { opacity: 0.25; }
-    }
-
-    /* Titel Glow */
-    .hero-title {
-      animation: titleGlow 4s ease-in-out infinite;
-    }
-    @keyframes titleGlow {
-      0% { filter: drop-shadow(0 0 10px rgba(255,215,0,0.25)); }
-      50% { filter: drop-shadow(0 0 22px rgba(255,215,0,0.45)); }
-      100% { filter: drop-shadow(0 0 10px rgba(255,215,0,0.25)); }
-    }
-
-    /* Ticker */
-    .ticker {
-      animation: tickerSlide 18s linear infinite;
-    }
-    @keyframes tickerSlide {
-      from { transform: translateX(0%); }
-      to { transform: translateX(-100%); }
-    }
-
-    /* Code Rain */
-    .code-column {
-      animation: rain 6s linear infinite;
-    }
-    .code-column:nth-child(2) { animation-duration: 7s; animation-delay: 1s; }
-    .code-column:nth-child(3) { animation-duration: 5.5s; animation-delay: 2s; }
-    .code-column:nth-child(4) { animation-duration: 6.5s; animation-delay: 0.5s; }
-    .code-column:nth-child(5) { animation-duration: 7.5s; animation-delay: 1.5s; }
-    .code-column:nth-child(6) { animation-duration: 5.8s; animation-delay: 2.3s; }
-    .code-column:nth-child(7) { animation-duration: 6.2s; animation-delay: 0.8s; }
-    .code-column:nth-child(8) { animation-duration: 7.2s; animation-delay: 1.8s; }
-
-    @keyframes rain {
-      0%   { transform: translateY(-320px); opacity: 0; }
-      10%  { opacity: 1; }
-      90%  { opacity: 1; }
-      100% { transform: translateY(320px); opacity: 0; }
-    }
-  </style>
-
   <!-- Background -->
-  <rect width="1200" height="320" rx="18" fill="url(#bgGrad)"/>
-  <rect width="1200" height="320" rx="18" fill="url(#grid)" opacity="0.35"/>
-  <rect class="hero-overlay" width="1200" height="320" rx="18" fill="url(#glow)" opacity="0.9"/>
+  <rect width="1200" height="340" rx="18" fill="url(#bgGrad)"/>
+  <rect width="1200" height="340" rx="18" fill="url(#glow)" opacity="0.9"/>
 
-  <!-- Border -->
-  <rect x="5" y="5" width="1190" height="310" rx="16"
-        fill="none" stroke="url(#titleGrad)" stroke-width="1.4" opacity="0.55"/>
-
-  <!-- Matrix Code Rain -->
-  <g fill="#00ff9a" font-size="14" opacity="0.75">
-    <g class="code-column" transform="translate(120, -320)">
-      <text x="0" y="40">01</text>
-      <text x="0" y="70">0xA</text>
-      <text x="0" y="100">11</text>
-      <text x="0" y="130">0xF</text>
-      <text x="0" y="160">10</text>
-      <text x="0" y="190">0x3</text>
-      <text x="0" y="220">01</text>
-      <text x="0" y="250">0xC</text>
-      <text x="0" y="280">11</text>
-    </g>
-
-    <g class="code-column" transform="translate(220, -320)">
-      <text x="0" y="40">0x9</text>
-      <text x="0" y="70">10</text>
-      <text x="0" y="100">0xB</text>
-      <text x="0" y="130">01</text>
-      <text x="0" y="160">0xD</text>
-      <text x="0" y="190">11</text>
-      <text x="0" y="220">0x2</text>
-      <text x="0" y="250">10</text>
-      <text x="0" y="280">0xE</text>
-    </g>
-
-    <g class="code-column" transform="translate(320, -320)">
-      <text x="0" y="40">11</text>
-      <text x="0" y="70">0x7</text>
-      <text x="0" y="100">01</text>
-      <text x="0" y="130">0xA</text>
-      <text x="0" y="160">10</text>
-      <text x="0" y="190">0x1</text>
-      <text x="0" y="220">11</text>
-      <text x="0" y="250">0xC</text>
-      <text x="0" y="280">01</text>
-    </g>
-
-    <g class="code-column" transform="translate(420, -320)">
-      <text x="0" y="40">0xF</text>
-      <text x="0" y="70">10</text>
-      <text x="0" y="100">0x4</text>
-      <text x="0" y="130">11</text>
-      <text x="0" y="160">0x8</text>
-      <text x="0" y="190">01</text>
-      <text x="0" y="220">0xB</text>
-      <text x="0" y="250">10</text>
-      <text x="0" y="280">0x2</text>
-    </g>
-
-    <g class="code-column" transform="translate(520, -320)">
-      <text x="0" y="40">01</text>
-      <text x="0" y="70">0x6</text>
-      <text x="0" y="100">11</text>
-      <text x="0" y="130">0x9</text>
-      <text x="0" y="160">10</text>
-      <text x="0" y="190">0x3</text>
-      <text x="0" y="220">01</text>
-      <text x="0" y="250">0xD</text>
-      <text x="0" y="280">11</text>
-    </g>
-
-    <g class="code-column" transform="translate(620, -320)">
-      <text x="0" y="40">0xA</text>
-      <text x="0" y="70">10</text>
-      <text x="0" y="100">0x5</text>
-      <text x="0" y="130">01</text>
-      <text x="0" y="160">0xC</text>
-      <text x="0" y="190">11</text>
-      <text x="0" y="220">0x1</text>
-      <text x="0" y="250">10</text>
-      <text x="0" y="280">0xE</text>
-    </g>
-
-    <g class="code-column" transform="translate(720, -320)">
-      <text x="0" y="40">11</text>
-      <text x="0" y="70">0x7</text>
-      <text x="0" y="100">01</text>
-      <text x="0" y="130">0xB</text>
-      <text x="0" y="160">10</text>
-      <text x="0" y="190">0x2</text>
-      <text x="0" y="220">11</text>
-      <text x="0" y="250">0xC</text>
-      <text x="0" y="280">01</text>
-    </g>
-
-    <g class="code-column" transform="translate(820, -320)">
-      <text x="0" y="40">0xF</text>
-      <text x="0" y="70">10</text>
-      <text x="0" y="100">0x4</text>
-      <text x="0" y="130">11</text>
-      <text x="0" y="160">0x8</text>
-      <text x="0" y="190">01</text>
-      <text x="0" y="220">0x9</text>
-      <text x="0" y="250">10</text>
-      <text x="0" y="280">0x3</text>
-    </g>
-  </g>
+  <!-- Pulsing Border -->
+  <rect x="5" y="5" width="1190" height="330" rx="16"
+        fill="none" stroke="url(#titleGrad)" stroke-width="1.4" opacity="0.55">
+    <animate attributeName="opacity"
+             values="0.55;0.9;0.55"
+             dur="5s"
+             repeatCount="indefinite"/>
+  </rect>
 
   <!-- Titel -->
-  <text x="50%" y="34%" text-anchor="middle" font-size="52" font-weight="700"
-        class="hero-title"
+  <text x="50%" y="32%" text-anchor="middle" font-size="54" font-weight="700"
         fill="url(#titleGrad)" filter="url(#softGlow)" letter-spacing="1.5">
     &gt;_ MF-swiss
+    <animate attributeName="opacity"
+             values="1;0.7;1"
+             dur="4s"
+             repeatCount="indefinite"/>
+    <animateTransform attributeName="transform"
+                      type="scale"
+                      values="1;1.02;1"
+                      dur="4s"
+                      repeatCount="indefinite"/>
   </text>
 
   <!-- Subtitle -->
-  <text x="50%" y="48%" text-anchor="middle" font-size="18"
+  <text x="50%" y="46%" text-anchor="middle" font-size="18"
         fill="#9fe8d4" letter-spacing="0.7">
     Full‑Stack Engineering · Java Backend · React Frontend · Cloud & Containerization
+    <animate attributeName="opacity"
+             values="1;0.8;1"
+             dur="6s"
+             repeatCount="indefinite"/>
   </text>
 
-  <!-- Ticker -->
-  <g transform="translate(80, 220)">
+  <!-- GitHub‑safe Skill‑Ticker -->
+  <g transform="translate(80, 260)">
     <clipPath id="tickerClip">
       <rect x="0" y="-18" width="1040" height="40" rx="8"/>
     </clipPath>
@@ -217,13 +84,138 @@
           fill="#050a12" opacity="0.85" stroke="#0f1b2a" stroke-width="1"/>
 
     <g clip-path="url(#tickerClip)">
-      <text class="ticker" x="0" y="8" font-size="16" fill="#6c8a9b">
+      <text x="0" y="8" font-size="16" fill="#6c8a9b">
         Java · Spring Boot · REST‑APIs · React · Vite · PostgreSQL · Docker · Git · UI/UX‑Design ·
         Software‑Architektur · Containerisierung · Debugging · API‑Integration ·
         Java · Spring Boot · REST‑APIs · React · Vite · PostgreSQL · Docker · Git · UI/UX‑Design ·
         Software‑Architektur · Containerisierung · Debugging · API‑Integration ·
+        <animateTransform attributeName="transform"
+                          type="translate"
+                          from="0 0" to="-1040 0"
+                          dur="18s"
+                          repeatCount="indefinite"/>
       </text>
     </g>
+  </g>
+
+  <!-- MATRIX CODE RAIN (16 Columns) -->
+  <g fill="#00ff9a" font-size="14" opacity="0.75">
+
+    <!-- Column generator -->
+    <!-- I generate 16 columns with different speeds, delays, and characters -->
+
+    <!-- Column 1 -->
+    <g transform="translate(120, -340)">
+      <text>01 ⟡</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="120 -340" to="120 340"
+                        dur="6s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 2 -->
+    <g transform="translate(200, -340)">
+      <text>0xA ⚙</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="200 -340" to="200 340"
+                        dur="7s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 3 -->
+    <g transform="translate(280, -340)">
+      <text>11 ⌁</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="280 -340" to="280 340"
+                        dur="5.5s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 4 -->
+    <g transform="translate(360, -340)">
+      <text>0xF ⌘</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="360 -340" to="360 340"
+                        dur="6.5s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 5 -->
+    <g transform="translate(440, -340)">
+      <text>10 ⟡</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="440 -340" to="440 340"
+                        dur="7.5s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 6 -->
+    <g transform="translate(520, -340)">
+      <text>0x3 ⚙</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="520 -340" to="520 340"
+                        dur="5.8s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 7 -->
+    <g transform="translate(600, -340)">
+      <text>01 ⌁</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="600 -340" to="600 340"
+                        dur="6.2s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 8 -->
+    <g transform="translate(680, -340)">
+      <text>0xC ⌘</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="680 -340" to="680 340"
+                        dur="7.2s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 9 -->
+    <g transform="translate(760, -340)">
+      <text>11 ⟡</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="760 -340" to="760 340"
+                        dur="6.8s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 10 -->
+    <g transform="translate(840, -340)">
+      <text>0x7 ⚙</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="840 -340" to="840 340"
+                        dur="5.9s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 11 -->
+    <g transform="translate(920, -340)">
+      <text>01 ⌁</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="920 -340" to="920 340"
+                        dur="7.1s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 12 -->
+    <g transform="translate(1000, -340)">
+      <text>0xE ⌘</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="1000 -340" to="1000 340"
+                        dur="6.4s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 13 -->
+    <g transform="translate(1080, -340)">
+      <text>10 ⟡</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="1080 -340" to="1080 340"
+                        dur="7.4s" repeatCount="indefinite"/>
+    </g>
+
+    <!-- Column 14 -->
+    <g transform="translate(1160, -340)">
+      <text>0xB ⚙</text>
+      <animateTransform attributeName="transform" type="translate"
+                        from="1160 -340" to="1160 340"
+                        dur="5.7s" repeatCount="indefinite"/>
+    </g>
+
   </g>
 
 </svg>
