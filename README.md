@@ -43,8 +43,8 @@ und Docker-Setup.
 
 ### 🟩 GitHub Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=mf-swiss&show_icons=true&theme=chartreuse-dark" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mf-swiss&layout=compact&theme=chartreuse-dark" />
+<img src="https://github-stats-extended.vercel.app/api?username=mf-swiss&show_icons=true&theme=chartreuse-dark" />
+<img src="https://github-stats-extended.vercel.app/api/top-langs/?username=mf-swiss&layout=compact&theme=chartreuse-dark" />
 
 ---
 
