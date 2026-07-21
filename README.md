@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="assets/terminal-loading.svg" width="100%" />
+<img src="assets/terminal-loading.gif" width="100%" />
 
 </div>
 
@@ -12,9 +12,10 @@
 
 ### 🟩 Über dieses Profil
 
-Full-Stack-Entwicklung mit **Spring Boot** (Backend) und **React** (Frontend).
-Aktuelles Projekt: ein Full-Stack Event-Planer mit REST-API, PostgreSQL
-und Docker-Setup.
+Ich baue Full‑Stack‑Anwendungen, die sowohl technisch solide als auch visuell ansprechend sind.
+Backend‑Logik mit Spring Boot, moderne Frontends mit React, ergänzt durch DevOps‑Elemente wie Docker und automatisierte Build‑Prozesse.
+
+Mein Fokus: klare Architektur, hochwertige Interfaces und nachhaltige Software‑Entwicklung.
 
 ---
 
