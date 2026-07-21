@@ -1,221 +1,137 @@
 <svg width="1200" height="340" viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg"
      font-family="'Cascadia Code','Consolas',Menlo,Monaco,monospace">
 
-  <defs>
-    <!-- Hintergrund -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#04070d"/>
-      <stop offset="100%" stop-color="#0b111c"/>
-    </linearGradient>
-
-    <!-- Titelgradient -->
-    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00ffd0"/>
-      <stop offset="50%" stop-color="#ffd700"/>
-      <stop offset="100%" stop-color="#00ffd0"/>
-    </linearGradient>
-
-    <!-- Glow -->
-    <radialGradient id="glow" cx="50%" cy="35%" r="70%">
-      <stop offset="0%" stop-color="#ffd700" stop-opacity="0.25">
-        <animate attributeName="stop-opacity"
-                 values="0.25;0.55;0.25"
-                 dur="6s"
-                 repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#ffd700" stop-opacity="0"/>
-    </radialGradient>
-
-    <!-- Soft Glow Filter -->
-    <filter id="softGlow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-
   <!-- Background -->
-  <rect width="1200" height="340" rx="18" fill="url(#bgGrad)"/>
-  <rect width="1200" height="340" rx="18" fill="url(#glow)" opacity="0.9"/>
+  <rect width="1200" height="340" rx="18" fill="#06090f"/>
+
+  <!-- Pulsing Glow -->
+  <rect width="1200" height="340" rx="18" fill="#ffd700" opacity="0.15">
+    <animate attributeName="opacity"
+             values="0.15;0.35;0.15"
+             dur="6s"
+             repeatCount="indefinite"/>
+  </rect>
 
   <!-- Pulsing Border -->
   <rect x="5" y="5" width="1190" height="330" rx="16"
-        fill="none" stroke="url(#titleGrad)" stroke-width="1.4" opacity="0.55">
+        fill="none" stroke="#ffd700" stroke-width="1.4" opacity="0.55">
     <animate attributeName="opacity"
              values="0.55;0.9;0.55"
              dur="5s"
              repeatCount="indefinite"/>
   </rect>
 
-  <!-- Titel -->
+  <!-- Title -->
   <text x="50%" y="32%" text-anchor="middle" font-size="54" font-weight="700"
-        fill="url(#titleGrad)" filter="url(#softGlow)" letter-spacing="1.5">
+        fill="#00ffd0">
     &gt;_ MF-swiss
     <animate attributeName="opacity"
              values="1;0.7;1"
              dur="4s"
              repeatCount="indefinite"/>
-    <animateTransform attributeName="transform"
-                      type="scale"
-                      values="1;1.02;1"
-                      dur="4s"
-                      repeatCount="indefinite"/>
   </text>
 
   <!-- Subtitle -->
   <text x="50%" y="46%" text-anchor="middle" font-size="18"
-        fill="#9fe8d4" letter-spacing="0.7">
+        fill="#9fe8d4">
     Full‑Stack Engineering · Java Backend · React Frontend · Cloud & Containerization
-    <animate attributeName="opacity"
-             values="1;0.8;1"
-             dur="6s"
+  </text>
+
+  <!-- Skill Ticker -->
+  <text x="1200" y="300" font-size="16" fill="#6c8a9b">
+    Java · Spring Boot · REST‑APIs · React · Vite · PostgreSQL · Docker · Git · UI/UX‑Design · Software‑Architektur · Containerisierung · Debugging · API‑Integration ·
+    <animate attributeName="x"
+             from="1200" to="-1800"
+             dur="18s"
              repeatCount="indefinite"/>
   </text>
 
-  <!-- GitHub‑safe Skill‑Ticker -->
-  <g transform="translate(80, 260)">
-    <clipPath id="tickerClip">
-      <rect x="0" y="-18" width="1040" height="40" rx="8"/>
-    </clipPath>
+  <!-- MATRIX CODE RAIN -->
+  <!-- 16 Columns -->
+  <!-- Each column is a single text element with animated Y position -->
 
-    <rect x="0" y="-18" width="1040" height="40" rx="8"
-          fill="#050a12" opacity="0.85" stroke="#0f1b2a" stroke-width="1"/>
+  <!-- Column generator -->
+  <!-- X positions: 120, 180, 240, ... -->
+  <!-- Different speeds -->
 
-    <g clip-path="url(#tickerClip)">
-      <text x="0" y="8" font-size="16" fill="#6c8a9b">
-        Java · Spring Boot · REST‑APIs · React · Vite · PostgreSQL · Docker · Git · UI/UX‑Design ·
-        Software‑Architektur · Containerisierung · Debugging · API‑Integration ·
-        Java · Spring Boot · REST‑APIs · React · Vite · PostgreSQL · Docker · Git · UI/UX‑Design ·
-        Software‑Architektur · Containerisierung · Debugging · API‑Integration ·
-        <animateTransform attributeName="transform"
-                          type="translate"
-                          from="0 0" to="-1040 0"
-                          dur="18s"
-                          repeatCount="indefinite"/>
-      </text>
-    </g>
-  </g>
+  <!-- Column 1 -->
+  <text x="120" y="-20" fill="#00ff9a" font-size="14">01 ⟡
+    <animate attributeName="y" from="-20" to="360" dur="6s" repeatCount="indefinite"/>
+  </text>
 
-  <!-- MATRIX CODE RAIN (16 Columns) -->
-  <g fill="#00ff9a" font-size="14" opacity="0.75">
+  <!-- Column 2 -->
+  <text x="180" y="-20" fill="#00ff9a" font-size="14">0xA ⚙
+    <animate attributeName="y" from="-20" to="360" dur="7s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column generator -->
-    <!-- I generate 16 columns with different speeds, delays, and characters -->
+  <!-- Column 3 -->
+  <text x="240" y="-20" fill="#00ff9a" font-size="14">11 ⌁
+    <animate attributeName="y" from="-20" to="360" dur="5.5s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 1 -->
-    <g transform="translate(120, -340)">
-      <text>01 ⟡</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="120 -340" to="120 340"
-                        dur="6s" repeatCount="indefinite"/>
-    </g>
+  <!-- Column 4 -->
+  <text x="300" y="-20" fill="#00ff9a" font-size="14">0xF ⌘
+    <animate attributeName="y" from="-20" to="360" dur="6.5s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 2 -->
-    <g transform="translate(200, -340)">
-      <text>0xA ⚙</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="200 -340" to="200 340"
-                        dur="7s" repeatCount="indefinite"/>
-    </g>
+  <!-- Column 5 -->
+  <text x="360" y="-20" fill="#00ff9a" font-size="14">10 ⟡
+    <animate attributeName="y" from="-20" to="360" dur="7.5s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 3 -->
-    <g transform="translate(280, -340)">
-      <text>11 ⌁</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="280 -340" to="280 340"
-                        dur="5.5s" repeatCount="indefinite"/>
-    </g>
+  <!-- Column 6 -->
+  <text x="420" y="-20" fill="#00ff9a" font-size="14">0x3 ⚙
+    <animate attributeName="y" from="-20" to="360" dur="5.8s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 4 -->
-    <g transform="translate(360, -340)">
-      <text>0xF ⌘</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="360 -340" to="360 340"
-                        dur="6.5s" repeatCount="indefinite"/>
-    </g>
+  <!-- Column 7 -->
+  <text x="480" y="-20" fill="#00ff9a" font-size="14">01 ⌁
+    <animate attributeName="y" from="-20" to="360" dur="6.2s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 5 -->
-    <g transform="translate(440, -340)">
-      <text>10 ⟡</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="440 -340" to="440 340"
-                        dur="7.5s" repeatCount="indefinite"/>
-    </g>
+  <!-- Column 8 -->
+  <text x="540" y="-20" fill="#00ff9a" font-size="14">0xC ⌘
+    <animate attributeName="y" from="-20" to="360" dur="7.2s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 6 -->
-    <g transform="translate(520, -340)">
-      <text>0x3 ⚙</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="520 -340" to="520 340"
-                        dur="5.8s" repeatCount="indefinite"/>
-    </g>
+  <!-- Column 9 -->
+  <text x="600" y="-20" fill="#00ff9a" font-size="14">11 ⟡
+    <animate attributeName="y" from="-20" to="360" dur="6.8s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 7 -->
-    <g transform="translate(600, -340)">
-      <text>01 ⌁</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="600 -340" to="600 340"
-                        dur="6.2s" repeatCount="indefinite"/>
-    </g>
+  <!-- Column 10 -->
+  <text x="660" y="-20" fill="#00ff9a" font-size="14">0x7 ⚙
+    <animate attributeName="y" from="-20" to="360" dur="5.9s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 8 -->
-    <g transform="translate(680, -340)">
-      <text>0xC ⌘</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="680 -340" to="680 340"
-                        dur="7.2s" repeatCount="indefinite"/>
-    </g>
+  <!-- Column 11 -->
+  <text x="720" y="-20" fill="#00ff9a" font-size="14">01 ⌁
+    <animate attributeName="y" from="-20" to="360" dur="7.1s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 9 -->
-    <g transform="translate(760, -340)">
-      <text>11 ⟡</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="760 -340" to="760 340"
-                        dur="6.8s" repeatCount="indefinite"/>
-    </g>
+  <!-- Column 12 -->
+  <text x="780" y="-20" fill="#00ff9a" font-size="14">0xE ⌘
+    <animate attributeName="y" from="-20" to="360" dur="6.4s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 10 -->
-    <g transform="translate(840, -340)">
-      <text>0x7 ⚙</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="840 -340" to="840 340"
-                        dur="5.9s" repeatCount="indefinite"/>
-    </g>
+  <!-- Column 13 -->
+  <text x="840" y="-20" fill="#00ff9a" font-size="14">10 ⟡
+    <animate attributeName="y" from="-20" to="360" dur="7.4s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 11 -->
-    <g transform="translate(920, -340)">
-      <text>01 ⌁</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="920 -340" to="920 340"
-                        dur="7.1s" repeatCount="indefinite"/>
-    </g>
+  <!-- Column 14 -->
+  <text x="900" y="-20" fill="#00ff9a" font-size="14">0xB ⚙
+    <animate attributeName="y" from="-20" to="360" dur="5.7s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 12 -->
-    <g transform="translate(1000, -340)">
-      <text>0xE ⌘</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="1000 -340" to="1000 340"
-                        dur="6.4s" repeatCount="indefinite"/>
-    </g>
+  <!-- Column 15 -->
+  <text x="960" y="-20" fill="#00ff9a" font-size="14">11 ⌁
+    <animate attributeName="y" from="-20" to="360" dur="6.3s" repeatCount="indefinite"/>
+  </text>
 
-    <!-- Column 13 -->
-    <g transform="translate(1080, -340)">
-      <text>10 ⟡</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="1080 -340" to="1080 340"
-                        dur="7.4s" repeatCount="indefinite"/>
-    </g>
-
-    <!-- Column 14 -->
-    <g transform="translate(1160, -340)">
-      <text>0xB ⚙</text>
-      <animateTransform attributeName="transform" type="translate"
-                        from="1160 -340" to="1160 340"
-                        dur="5.7s" repeatCount="indefinite"/>
-    </g>
-
-  </g>
+  <!-- Column 16 -->
+  <text x="1020" y="-20" fill="#00ff9a" font-size="14">0x9 ⌘
+    <animate attributeName="y" from="-20" to="360" dur="7.3s" repeatCount="indefinite"/>
+  </text>
 
 </svg>
