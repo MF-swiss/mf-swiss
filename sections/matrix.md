@@ -1,15 +1,15 @@
 # 🟩 Skills-Matrix
 
 ```txt
-┌────────────┬──────────────────────────────────────┐
-│ Bereich     │ Skills                                │
-├────────────┼──────────────────────────────────────┤
-│ Backend     │ Java · Spring Boot 3 · REST · JUnit   │
-│ Datenbank   │ PostgreSQL                            │
+┌─────────────┬────────────────────────────────────────┐
+│ Bereich     │ Skills                                 │
+├─────────────┼────────────────────────────────────────┤
+│ Backend     │ Java · Spring Boot 3 · REST · JUnit    │
+│ Datenbank   │ PostgreSQL                             │
 │ Frontend    │ React · Vite · CSS (Grid/Flex)         │
 │ DevOps      │ Docker · Git                           │
 │ Shell       │ Linux · Windows Terminal               │
-└────────────┴──────────────────────────────────────┘
+└─────────────┴────────────────────────────────────────┘
 ```
 
 > Basis: Full-Stack-Projekt "Mini Event-Planer" (Spring Boot + React,
