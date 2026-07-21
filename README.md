@@ -37,4 +37,4 @@ Mein Fokus: klare Architektur, hochwertige Interfaces und nachhaltige Software鈥
 
 ## Kontakt
 
-[Portfolio](https://deine-seite.ch) 路 [LinkedIn](https://linkedin.com/in/...) 路 [GitHub](https://github.com/mf-swiss)
+[Portfolio](https://mf-swiss.github.io/) 路 [LinkedIn](https://www.linkedin.com/in/mfritsche/) 路 [GitHub](https://github.com/mf-swiss)
