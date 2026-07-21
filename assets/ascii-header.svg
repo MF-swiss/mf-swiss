@@ -1,0 +1,26 @@
+<svg width="1200" height="220" viewBox="0 0 1200 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neonGold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff88"/>
+      <stop offset="50%" stop-color="#ffd700"/>
+      <stop offset="100%" stop-color="#00ffcc"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="220" fill="#050810" rx="10"/>
+  <rect x="4" y="4" width="1192" height="212" fill="none" stroke="url(#neonGold)" stroke-width="1.5" rx="8" opacity="0.6"/>
+
+  <text x="50%" y="42%" text-anchor="middle"
+        font-family="Consolas, Menlo, Monaco, monospace"
+        font-size="40" font-weight="bold"
+        fill="url(#neonGold)">
+    &gt;_ mf-swiss
+  </text>
+
+  <text x="50%" y="65%" text-anchor="middle"
+        font-family="Consolas, Menlo, Monaco, monospace"
+        font-size="20"
+        fill="#00ff88">
+    Premium Terminal · React · Vite · UI/UX · Cybersecurity
+  </text>
+</svg>
