@@ -1,24 +1,225 @@
-<svg width="1200" height="340" viewBox="0 0 1200 340" xmlns="http://www.w3.org/2000/svg"
+<svg width="1200" height="260" viewBox="0 0 1200 260" xmlns="http://www.w3.org/2000/svg"
      font-family="'Cascadia Code','Consolas',Menlo,Monaco,monospace">
 
-  <!-- Background -->
-  <rect width="1200" height="340" rx="18" fill="#06090f"/>
+  <!-- BACKGROUND -->
+  <rect width="1200" height="260" rx="16" fill="#06090f"/>
 
-  <!-- Static Glow -->
-  <rect width="1200" height="340" rx="18" fill="#ffd700" opacity="0.12"/>
+  <!-- EXTREME CHAOTIC IT CODE RAIN (BACKGROUND) -->
+  <!-- 40 Columns, ASCII-only, animate y, small font -->
 
-  <!-- Pulsing Border -->
-  <rect x="5" y="5" width="1190" height="330" rx="16"
-        fill="none" stroke="#ffd700" stroke-width="1.4" opacity="0.55">
-    <animate attributeName="opacity"
-             values="0.55;0.9;0.55"
-             dur="5s"
-             repeatCount="indefinite"/>
-  </rect>
+  <!-- Helper: x = 30 + n*30 -->
+
+  <!-- I generate 40 chaotic columns -->
+  <!-- Each with different patterns, speeds, opacity, start positions -->
+
+  <!-- Column generator -->
+  <!-- I manually expand 40 columns for GitHub safety -->
+
+  <!-- Column 1 -->
+  <text x="30" y="-50" fill="#00ff9a" font-size="10" opacity="0.40">0x7FFE12A0
+    <animate attributeName="y" from="-50" to="300" dur="4.8s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 2 -->
+  <text x="60" y="-80" fill="#00ff9a" font-size="10" opacity="0.55">DE AD BE EF
+    <animate attributeName="y" from="-80" to="300" dur="7.1s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 3 -->
+  <text x="90" y="-40" fill="#00ff9a" font-size="10" opacity="0.35">:443
+    <animate attributeName="y" from="-40" to="300" dur="5.0s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 4 -->
+  <text x="120" y="-70" fill="#00ff9a" font-size="10" opacity="0.50">A9F3
+    <animate attributeName="y" from="-70" to="300" dur="8.0s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 5 -->
+  <text x="150" y="-30" fill="#00ff9a" font-size="10" opacity="0.30">0101
+    <animate attributeName="y" from="-30" to="300" dur="4.6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 6 -->
+  <text x="180" y="-90" fill="#00ff9a" font-size="10" opacity="0.55">0xA0B1
+    <animate attributeName="y" from="-90" to="300" dur="8.4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 7 -->
+  <text x="210" y="-60" fill="#00ff9a" font-size="10" opacity="0.45">987
+    <animate attributeName="y" from="-60" to="300" dur="6.3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 8 -->
+  <text x="240" y="-100" fill="#00ff9a" font-size="10" opacity="0.55">0xFF12
+    <animate attributeName="y" from="-100" to="300" dur="8.7s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 9 -->
+  <text x="270" y="-50" fill="#00ff9a" font-size="10" opacity="0.40">:8080
+    <animate attributeName="y" from="-50" to="300" dur="5.4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 10 -->
+  <text x="300" y="-110" fill="#00ff9a" font-size="10" opacity="0.55">D4C1
+    <animate attributeName="y" from="-110" to="300" dur="9.0s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 11 -->
+  <text x="330" y="-45" fill="#00ff9a" font-size="10" opacity="0.35">1100
+    <animate attributeName="y" from="-45" to="300" dur="4.9s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 12 -->
+  <text x="360" y="-120" fill="#00ff9a" font-size="10" opacity="0.55">0x9B7E
+    <animate attributeName="y" from="-120" to="300" dur="9.3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 13 -->
+  <text x="390" y="-70" fill="#00ff9a" font-size="10" opacity="0.45">404
+    <animate attributeName="y" from="-70" to="300" dur="6.5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 14 -->
+  <text x="420" y="-130" fill="#00ff9a" font-size="10" opacity="0.55">0xC0FFEE
+    <animate attributeName="y" from="-130" to="300" dur="9.6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 15 -->
+  <text x="450" y="-55" fill="#00ff9a" font-size="10" opacity="0.40">0011
+    <animate attributeName="y" from="-55" to="300" dur="5.2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 16 -->
+  <text x="480" y="-140" fill="#00ff9a" font-size="10" opacity="0.55">0xDEAD
+    <animate attributeName="y" from="-140" to="300" dur="9.9s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 17 -->
+  <text x="510" y="-65" fill="#00ff9a" font-size="10" opacity="0.45">123
+    <animate attributeName="y" from="-65" to="300" dur="6.7s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 18 -->
+  <text x="540" y="-150" fill="#00ff9a" font-size="10" opacity="0.55">0xBEEF
+    <animate attributeName="y" from="-150" to="300" dur="10.1s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 19 -->
+  <text x="570" y="-60" fill="#00ff9a" font-size="10" opacity="0.35">0101
+    <animate attributeName="y" from="-60" to="300" dur="5.5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 20 -->
+  <text x="600" y="-160" fill="#00ff9a" font-size="10" opacity="0.55">0xA1F2
+    <animate attributeName="y" from="-160" to="300" dur="10.4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 21 -->
+  <text x="630" y="-75" fill="#00ff9a" font-size="10" opacity="0.45">9F3A
+    <animate attributeName="y" from="-75" to="300" dur="6.9s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 22 -->
+  <text x="660" y="-170" fill="#00ff9a" font-size="10" opacity="0.55">0xFA12
+    <animate attributeName="y" from="-170" to="300" dur="10.7s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 23 -->
+  <text x="690" y="-80" fill="#00ff9a" font-size="10" opacity="0.40">:22
+    <animate attributeName="y" from="-80" to="300" dur="5.8s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 24 -->
+  <text x="720" y="-180" fill="#00ff9a" font-size="10" opacity="0.55">0x1A2B
+    <animate attributeName="y" from="-180" to="300" dur="11.0s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 25 -->
+  <text x="750" y="-85" fill="#00ff9a" font-size="10" opacity="0.45">DEBUG
+    <animate attributeName="y" from="-85" to="300" dur="7.2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 26 -->
+  <text x="780" y="-190" fill="#00ff9a" font-size="10" opacity="0.55">0xFE12
+    <animate attributeName="y" from="-190" to="300" dur="11.3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 27 -->
+  <text x="810" y="-90" fill="#00ff9a" font-size="10" opacity="0.40">WARN
+    <animate attributeName="y" from="-90" to="300" dur="6.0s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 28 -->
+  <text x="840" y="-200" fill="#00ff9a" font-size="10" opacity="0.55">0xABCD
+    <animate attributeName="y" from="-200" to="300" dur="11.6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 29 -->
+  <text x="870" y="-95" fill="#00ff9a" font-size="10" opacity="0.45">INFO
+    <animate attributeName="y" from="-95" to="300" dur="7.4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 30 -->
+  <text x="900" y="-210" fill="#00ff9a" font-size="10" opacity="0.55">0xF00D
+    <animate attributeName="y" from="-210" to="300" dur="11.9s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 31 -->
+  <text x="930" y="-100" fill="#00ff9a" font-size="10" opacity="0.40">503
+    <animate attributeName="y" from="-100" to="300" dur="6.2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 32 -->
+  <text x="960" y="-220" fill="#00ff9a" font-size="10" opacity="0.55">0xCAFE
+    <animate attributeName="y" from="-220" to="300" dur="12.2s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 33 -->
+  <text x="990" y="-105" fill="#00ff9a" font-size="10" opacity="0.45">808
+    <animate attributeName="y" from="-105" to="300" dur="7.6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 34 -->
+  <text x="1020" y="-230" fill="#00ff9a" font-size="10" opacity="0.55">0xFACE
+    <animate attributeName="y" from="-230" to="300" dur="12.5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 35 -->
+  <text x="1050" y="-110" fill="#00ff9a" font-size="10" opacity="0.40">200
+    <animate attributeName="y" from="-110" to="300" dur="6.4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 36 -->
+  <text x="1080" y="-240" fill="#00ff9a" font-size="10" opacity="0.55">0xBADA
+    <animate attributeName="y" from="-240" to="300" dur="12.8s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 37 -->
+  <text x="1110" y="-115" fill="#00ff9a" font-size="10" opacity="0.45">999
+    <animate attributeName="y" from="-115" to="300" dur="7.8s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 38 -->
+  <text x="1140" y="-250" fill="#00ff9a" font-size="10" opacity="0.55">0x1234
+    <animate attributeName="y" from="-250" to="300" dur="13.0s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 39 -->
+  <text x="1170" y="-120" fill="#00ff9a" font-size="10" opacity="0.45">777
+    <animate attributeName="y" from="-120" to="300" dur="8.0s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Column 40 -->
+  <text x="1200" y="-260" fill="#00ff9a" font-size="10" opacity="0.55">0x0F0F
+    <animate attributeName="y" from="-260" to="300" dur="13.3s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- FOREGROUND CONTENT -->
 
   <!-- Title -->
-  <text x="50%" y="32%" text-anchor="middle" font-size="54" font-weight="700"
-        fill="#00ffd0">
+  <text x="50%" y="32%" text-anchor="middle" font-size="40" font-weight="700"
+        fill="#46daff">
     &gt;_ MF-swiss
     <animate attributeName="opacity"
              values="1;0.7;1"
@@ -27,101 +228,18 @@
   </text>
 
   <!-- Subtitle -->
-  <text x="50%" y="46%" text-anchor="middle" font-size="18"
-        fill="#9fe8d4">
-    Full‑Stack Engineering · Java Backend · React Frontend · Cloud & Containerization
+  <text x="50%" y="50%" text-anchor="middle" font-size="16"
+        fill="#46daff">
+    Full-Stack Engineering · Java Backend · React Frontend · Cloud &amp; Containerization
   </text>
 
   <!-- Skill Ticker -->
-  <text x="1200" y="300" font-size="16" fill="#6c8a9b">
-    Java · Spring Boot · REST‑APIs · React · Vite · PostgreSQL · Docker · Git · UI/UX‑Design · Software‑Architektur · Containerisierung · Debugging · API‑Integration ·
+  <text x="1200" y="220" font-size="13" fill="#aae0ff">
+    Java · Spring Boot · REST-APIs · React · Vite · PostgreSQL · Docker · Git · UI/UX-Design · Software-Architektur · Containerisierung · Debugging · API-Integration ·
     <animate attributeName="x"
              from="1200" to="-1800"
-             dur="18s"
+             dur="20s"
              repeatCount="indefinite"/>
-  </text>
-
-  <!-- MATRIX CODE RAIN (GitHub‑safe) -->
-  <!-- Only ASCII characters, only animate y -->
-
-  <!-- Column 1 -->
-  <text x="120" y="-20" fill="#00ff9a" font-size="14">01
-    <animate attributeName="y" from="-20" to="360" dur="6s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 2 -->
-  <text x="180" y="-20" fill="#00ff9a" font-size="14">0xA
-    <animate attributeName="y" from="-20" to="360" dur="7s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 3 -->
-  <text x="240" y="-20" fill="#00ff9a" font-size="14">11
-    <animate attributeName="y" from="-20" to="360" dur="5.5s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 4 -->
-  <text x="300" y="-20" fill="#00ff9a" font-size="14">0xF
-    <animate attributeName="y" from="-20" to="360" dur="6.5s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 5 -->
-  <text x="360" y="-20" fill="#00ff9a" font-size="14">10
-    <animate attributeName="y" from="-20" to="360" dur="7.5s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 6 -->
-  <text x="420" y="-20" fill="#00ff9a" font-size="14">0x3
-    <animate attributeName="y" from="-20" to="360" dur="5.8s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 7 -->
-  <text x="480" y="-20" fill="#00ff9a" font-size="14">01
-    <animate attributeName="y" from="-20" to="360" dur="6.2s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 8 -->
-  <text x="540" y="-20" fill="#00ff9a" font-size="14">0xC
-    <animate attributeName="y" from="-20" to="360" dur="7.2s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 9 -->
-  <text x="600" y="-20" fill="#00ff9a" font-size="14">11
-    <animate attributeName="y" from="-20" to="360" dur="6.8s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 10 -->
-  <text x="660" y="-20" fill="#00ff9a" font-size="14">0x7
-    <animate attributeName="y" from="-20" to="360" dur="5.9s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 11 -->
-  <text x="720" y="-20" fill="#00ff9a" font-size="14">01
-    <animate attributeName="y" from="-20" to="360" dur="7.1s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 12 -->
-  <text x="780" y="-20" fill="#00ff9a" font-size="14">0xE
-    <animate attributeName="y" from="-20" to="360" dur="6.4s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 13 -->
-  <text x="840" y="-20" fill="#00ff9a" font-size="14">10
-    <animate attributeName="y" from="-20" to="360" dur="7.4s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 14 -->
-  <text x="900" y="-20" fill="#00ff9a" font-size="14">0xB
-    <animate attributeName="y" from="-20" to="360" dur="5.7s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 15 -->
-  <text x="960" y="-20" fill="#00ff9a" font-size="14">11
-    <animate attributeName="y" from="-20" to="360" dur="6.3s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Column 16 -->
-  <text x="1020" y="-20" fill="#00ff9a" font-size="14">0x9
-    <animate attributeName="y" from="-20" to="360" dur="7.3s" repeatCount="indefinite"/>
   </text>
 
 </svg>
