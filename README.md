@@ -1,3 +1,7 @@
+# MF-swiss
+## **Full-Stack Developer**
+
+
 <div align="center">
 
 <img src="assets/ascii-header.svg" width="720" />
@@ -35,37 +39,12 @@ Mein Fokus: klare Architektur, hochwertige Interfaces und nachhaltige Software�
 
 ---
 
-### 🟩 System Status
-
-```bash
-$ systemctl status developer.service
-
-● mf-swiss.service
-   Loaded: active
-   Backend:  Java · Spring Boot 3 · REST APIs · PostgreSQL
-   Frontend: React · Vite · CSS
-   DevOps:   Docker · Git
-   Shell:    Linux / Windows Terminal
-   Uptime: ∞
-```
-
----
 
 
-# mf-swiss
 
 **Full-Stack Developer** — Java · Spring Boot · React
 
 </div>
-
-<br/>
-
-Ich baue Full-Stack-Anwendungen mit Spring Boot im Backend und React im
-Frontend, ergänzt durch Docker für konsistente Build- und Laufzeitumgebungen.
-Aktuelles Projekt: eine Full-Stack-Webanwendung mit REST-API, PostgreSQL
-und automatisierten Tests.
-
-<br/>
 
 **Stack**
 
