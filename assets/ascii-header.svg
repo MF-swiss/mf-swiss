@@ -4,13 +4,8 @@
   <!-- Background -->
   <rect width="1200" height="340" rx="18" fill="#06090f"/>
 
-  <!-- Pulsing Glow -->
-  <rect width="1200" height="340" rx="18" fill="#ffd700" opacity="0.15">
-    <animate attributeName="opacity"
-             values="0.15;0.35;0.15"
-             dur="6s"
-             repeatCount="indefinite"/>
-  </rect>
+  <!-- Static Glow -->
+  <rect width="1200" height="340" rx="18" fill="#ffd700" opacity="0.12"/>
 
   <!-- Pulsing Border -->
   <rect x="5" y="5" width="1190" height="330" rx="16"
@@ -46,91 +41,86 @@
              repeatCount="indefinite"/>
   </text>
 
-  <!-- MATRIX CODE RAIN -->
-  <!-- 16 Columns -->
-  <!-- Each column is a single text element with animated Y position -->
-
-  <!-- Column generator -->
-  <!-- X positions: 120, 180, 240, ... -->
-  <!-- Different speeds -->
+  <!-- MATRIX CODE RAIN (GitHub‑safe) -->
+  <!-- Only ASCII characters, only animate y -->
 
   <!-- Column 1 -->
-  <text x="120" y="-20" fill="#00ff9a" font-size="14">01 ⟡
+  <text x="120" y="-20" fill="#00ff9a" font-size="14">01
     <animate attributeName="y" from="-20" to="360" dur="6s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 2 -->
-  <text x="180" y="-20" fill="#00ff9a" font-size="14">0xA ⚙
+  <text x="180" y="-20" fill="#00ff9a" font-size="14">0xA
     <animate attributeName="y" from="-20" to="360" dur="7s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 3 -->
-  <text x="240" y="-20" fill="#00ff9a" font-size="14">11 ⌁
+  <text x="240" y="-20" fill="#00ff9a" font-size="14">11
     <animate attributeName="y" from="-20" to="360" dur="5.5s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 4 -->
-  <text x="300" y="-20" fill="#00ff9a" font-size="14">0xF ⌘
+  <text x="300" y="-20" fill="#00ff9a" font-size="14">0xF
     <animate attributeName="y" from="-20" to="360" dur="6.5s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 5 -->
-  <text x="360" y="-20" fill="#00ff9a" font-size="14">10 ⟡
+  <text x="360" y="-20" fill="#00ff9a" font-size="14">10
     <animate attributeName="y" from="-20" to="360" dur="7.5s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 6 -->
-  <text x="420" y="-20" fill="#00ff9a" font-size="14">0x3 ⚙
+  <text x="420" y="-20" fill="#00ff9a" font-size="14">0x3
     <animate attributeName="y" from="-20" to="360" dur="5.8s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 7 -->
-  <text x="480" y="-20" fill="#00ff9a" font-size="14">01 ⌁
+  <text x="480" y="-20" fill="#00ff9a" font-size="14">01
     <animate attributeName="y" from="-20" to="360" dur="6.2s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 8 -->
-  <text x="540" y="-20" fill="#00ff9a" font-size="14">0xC ⌘
+  <text x="540" y="-20" fill="#00ff9a" font-size="14">0xC
     <animate attributeName="y" from="-20" to="360" dur="7.2s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 9 -->
-  <text x="600" y="-20" fill="#00ff9a" font-size="14">11 ⟡
+  <text x="600" y="-20" fill="#00ff9a" font-size="14">11
     <animate attributeName="y" from="-20" to="360" dur="6.8s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 10 -->
-  <text x="660" y="-20" fill="#00ff9a" font-size="14">0x7 ⚙
+  <text x="660" y="-20" fill="#00ff9a" font-size="14">0x7
     <animate attributeName="y" from="-20" to="360" dur="5.9s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 11 -->
-  <text x="720" y="-20" fill="#00ff9a" font-size="14">01 ⌁
+  <text x="720" y="-20" fill="#00ff9a" font-size="14">01
     <animate attributeName="y" from="-20" to="360" dur="7.1s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 12 -->
-  <text x="780" y="-20" fill="#00ff9a" font-size="14">0xE ⌘
+  <text x="780" y="-20" fill="#00ff9a" font-size="14">0xE
     <animate attributeName="y" from="-20" to="360" dur="6.4s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 13 -->
-  <text x="840" y="-20" fill="#00ff9a" font-size="14">10 ⟡
+  <text x="840" y="-20" fill="#00ff9a" font-size="14">10
     <animate attributeName="y" from="-20" to="360" dur="7.4s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 14 -->
-  <text x="900" y="-20" fill="#00ff9a" font-size="14">0xB ⚙
+  <text x="900" y="-20" fill="#00ff9a" font-size="14">0xB
     <animate attributeName="y" from="-20" to="360" dur="5.7s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 15 -->
-  <text x="960" y="-20" fill="#00ff9a" font-size="14">11 ⌁
+  <text x="960" y="-20" fill="#00ff9a" font-size="14">11
     <animate attributeName="y" from="-20" to="360" dur="6.3s" repeatCount="indefinite"/>
   </text>
 
   <!-- Column 16 -->
-  <text x="1020" y="-20" fill="#00ff9a" font-size="14">0x9 ⌘
+  <text x="1020" y="-20" fill="#00ff9a" font-size="14">0x9
     <animate attributeName="y" from="-20" to="360" dur="7.3s" repeatCount="indefinite"/>
   </text>
 
